@@ -1,14 +1,27 @@
 # arithmetics-kata-clojure
 
-A Clojure library designed to ... well, that part is up to you.
+The [Arithmetics kata](https://katalyst.codurance.com/arithmetics) implemented in Clojure.
 
-## Usage
+My first clojure project, so bound to be littered with rookie errors.
 
-FIXME
+## Kata Instructions
+
+Create a function that can parse simple mathematical expressions in the following format:
+
+```text
+( 1 + 2 )
+```
+
+All of the operations are wrapped in parentheses and all tokens (parentheses, operands and numbers) should be separated by a space.
+
+## Possible extensions
+- Drop the requirement for every element to be space-separated.
+- Drop the requirement for all operations to be wrapped in parentheses and deduce operation order from operator precedence rules instead.
+
 
 ## License
 
-Copyright © 2021 FIXME
+Copyright © 2021 Nick White
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
