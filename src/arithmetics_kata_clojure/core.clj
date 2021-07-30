@@ -1,6 +1,6 @@
 (ns arithmetics-kata-clojure.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn evaluate
+  "Parse and evaluate an arithmetic expression"
+  [raw]
+  0)

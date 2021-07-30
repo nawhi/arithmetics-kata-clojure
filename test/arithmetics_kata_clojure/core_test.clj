@@ -2,6 +2,6 @@
   (:require [clojure.test :refer :all]
             [arithmetics-kata-clojure.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest adder-test
+  (testing "add"
+    (is (= (evaluate "0 + 0") 0))))
