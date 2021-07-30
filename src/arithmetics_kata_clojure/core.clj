@@ -4,5 +4,11 @@
 (defn evaluate
   "Parse and evaluate an arithmetic expression"
   [raw]
-  (let [tokens (str/split raw #" ")]
-    (+ (Integer/parseInt (nth tokens 1)) (Integer/parseInt (nth tokens 3)))))
+  (let [tokens (str/split raw #" ")
+        [_ lval operand rval _] tokens
+        op (case operand
+             "+" +
+             "-" -
+             "*" *
+             "/" /)]
+    (op (read-string lval) (read-string rval))))
