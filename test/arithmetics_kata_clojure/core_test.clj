@@ -2,6 +2,12 @@
   (:require [clojure.test :refer :all]
             [arithmetics-kata-clojure.core :refer :all]))
 
-(deftest adder-test
-  (testing "add"
-    (is (= (evaluate "0 + 0") 0))))
+(deftest arithmetics-test
+  (testing
+    (are [raw expected] (= expected (evaluate raw))
+                        "( 0 + 0 )" 0
+                        "( 1 + 0 )" 1
+                        "( 3 + 0 )" 3
+                        "( 1 + 1 )" 2
+                        "( 3 + 6 )" 9
+                        )))
